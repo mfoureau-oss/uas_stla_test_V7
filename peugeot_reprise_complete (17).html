@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimation Reprise Voiture Peugeot | Prix en 2 Min</title>
+    <meta name="description" content="Découvrez la valeur de votre véhicule gratuitement avec Peugeot. Estimation rapide en 2 minutes, jusqu'à 2000€ de bonus reprise garantis.">
+    <link rel="canonical" href="https://reprise.peugeot.be/">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Comment fonctionne la reprise de ma voiture actuelle ?", "acceptedAnswer": {"@type": "Answer", "text": "La reprise de votre véhicule actuel est simple : nous évaluons votre voiture selon son état, son kilométrage et sa valeur marchande. Cette évaluation peut être déduite du prix d'achat de votre nouveau véhicule Peugeot, facilitant ainsi votre transition vers un modèle plus récent."}},
+        {"@type": "Question", "name": "Quels sont les critères d'éligibilité pour la reprise ?", "acceptedAnswer": {"@type": "Answer", "text": "Votre véhicule doit être en état de marche, posséder tous les documents nécessaires (carte grise, contrôle technique à jour), et correspondre aux critères de notre grille d'évaluation. L'âge, le kilométrage et l'état général sont les principaux facteurs pris en compte."}},
+        {"@type": "Question", "name": "Comment puis-je obtenir une estimation de la valeur de reprise ?", "acceptedAnswer": {"@type": "Answer", "text": "Vous pouvez obtenir une estimation en ligne grâce à notre outil d'évaluation, ou directement en concession avec l'un de nos experts. L'estimation est basée sur le modèle, l'année, le kilométrage et l'état général de votre véhicule."}},
+        {"@type": "Question", "name": "La reprise de mon ancien véhicule est-elle obligatoire ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, la reprise n'est pas obligatoire. C'est un service que nous proposons pour faciliter l'achat de votre nouveau véhicule Peugeot. Vous pouvez choisir de vendre votre véhicule ailleurs ou de le conserver."}},
+        {"@type": "Question", "name": "Comment se déroule le processus de reprise en concession ?", "acceptedAnswer": {"@type": "Answer", "text": "Le processus comprend une expertise complète de votre véhicule par nos techniciens, une proposition de reprise basée sur l'état réel du véhicule, et si vous acceptez, la finalisation des documents administratifs. Le montant de la reprise est directement déduit du prix de votre nouveau véhicule."}},
+        {"@type": "Question", "name": "Y a-t-il des frais cachés lors d'une reprise ?", "acceptedAnswer": {"@type": "Answer", "text": "Non, notre service de reprise est transparent. Le montant proposé est celui que vous recevrez, sans frais cachés. Tous les coûts éventuels vous seront clairement expliqués avant la finalisation de la transaction."}},
+        {"@type": "Question", "name": "Quelles sont les alternatives si ma voiture n'est pas éligible à la reprise ?", "acceptedAnswer": {"@type": "Answer", "text": "Si votre véhicule n'est pas éligible à notre service de reprise, nous pouvons vous orienter vers des partenaires spécialisés dans le rachat de véhicules, ou vous conseiller sur les meilleures options pour la vente de votre voiture en privé."}}
+      ]
+    }
+    </script>
+    
+    <link href="https://fonts.cdnfonts.com/css/peugeot" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {'sans': ['Peugeot', 'sans-serif']}
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);}
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.98); 
+            backdrop-filter: blur(16px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        .cta-button {padding: 0.75rem 2rem !important; font-size: 1.125rem; font-weight: 600; border-radius: 5px; transition: all 0.3s ease; display: inline-block; border: none; cursor: pointer;}
+        @media (max-width: 768px) {.cta-button {display: block; width: 100%; font-size: 0.95rem; white-space: nowrap;}}
+        @media (min-width: 769px) {.cta-button {font-size: 0.95rem; white-space: nowrap;}}
+        select:disabled {
+            background-color: #f9fafb !important;
+            color: #6b7280 !important;
+            cursor: not-allowed !important;
+            opacity: 0.8;
+        }
+        button:disabled {
+            background: #9ca3af !important;
+            cursor: not-allowed !important;
+            opacity: 0.6;
+        }
+        button:not(:disabled):hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+        }
+        header video {
+            filter: contrast(1.5) brightness(0.7);
+        }
+        select {
+            transition: all 0.3s ease;
+        }
+        select:not(:disabled):hover {
+            border-color: #3b82f6 !important;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+        }
+        select:focus {
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        .reassurance-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #4b5563;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .reassurance-icon {
+            font-size: 1.125rem;
+            filter: grayscale(0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans bg-gray-50">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded z-50">Aller au contenu principal</a>
+
+    <!-- Hero -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/VIDEO%2BMP4%2BCAPSULE%2B3%2BCLAWS%2BPEUGEOT%2BE%2B3008%2B16-9-Appareils+Apple+HD+(qualite%CC%81+optimale).m4v" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black/30"></div>
+        <section class="relative z-10 text-center max-w-4xl mx-auto">
+            <div class="mb-12">
+                <div class="w-24 h-24 mx-auto mb-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Peugeot_2021_Logo.svg/699px-Peugeot_2021_Logo.svg.png" alt="Logo Peugeot" class="w-full h-full object-contain" width="96" height="96">
+                </div>
+            </div>
+            <h1 class="text-3xl md:text-5xl text-white mb-6 font-extrabold">Reprise voiture : estimez gratuitement votre véhicule</h1>
+            <p class="text-white/90 mb-8 font-light text-2xl">Obtenez le meilleur prix pour votre voiture en 2 minutes !</p>
+            <div class="mb-12 flex justify-center">
+                <p class="text-white text-lg font-medium bg-black/70 backdrop-blur-sm px-6 py-2 border border-white/20 rounded-sm">✨ Jusqu'à 2 000€ de bonus de reprise</p>
+            </div>
+            <section class="max-w-4xl mx-auto glass-effect shadow-2xl rounded-sm">
+                <h2 class="sr-only">Formulaire d'estimation de véhicule</h2>
+                <div class="p-6 md:p-8">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end">
+                        <div class="md:col-span-4">
+                            <label for="brand" class="block text-lg text-blue-600 mb-3 text-left font-bold">Indiquez votre marque</label>
+                            <select id="brand" class="h-16 w-full text-xl font-medium border-2 border-blue-200 focus:border-blue-500 text-center focus:outline-none px-6 bg-white" style="border-radius: 5px;">
+                                <option value="">Sélectionnez</option>
+                                <option value="Peugeot">Peugeot</option>
+                                <option value="Citroën">Citroën</option>
+                                <option value="Renault">Renault</option>
+                                <option value="DS">DS</option>
+                                <option value="Opel">Opel</option>
+                                <option value="Volkswagen">Volkswagen</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                                <option value="Mercedes">Mercedes</option>
+                                <option value="Ford">Ford</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-4">
+                            <label for="model" class="block text-lg text-blue-600 mb-3 text-left font-bold">Indiquez votre modèle</label>
+                            <select id="model" class="h-16 w-full text-xl font-medium border-2 border-blue-200 focus:border-blue-500 text-center focus:outline-none px-6 bg-white" style="border-radius: 5px;" disabled>
+                                <option value="">Sélectionnez</option>
+                                <option value="208">208</option>
+                                <option value="308">308</option>
+                                <option value="2008">2008</option>
+                                <option value="3008">3008</option>
+                                <option value="5008">5008</option>
+                                <option value="508">508</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="md:col-span-4">
+                            <button type="button" id="estimate-btn" class="gradient-bg text-white cta-button w-full h-16" disabled>
+                                ESTIMEZ VOTRE VOITURE
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-600 text-sm">🔒 Vos données sont sécurisées et ne seront jamais partagées avec des tiers</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </header>
+
+    <main id="main-content">
+        <!-- Features -->
+        <section class="bg-white py-14 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">La reprise chez Peugeot : comment ça marche ?</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <article class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center p-3">
+                            <img src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/icons_voiture_peugeot.png" alt="Icône voiture" class="w-full h-full object-contain" width="48" height="48">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Rachat voiture immédiat</h3>
+                        <p class="text-gray-600">Vendez votre véhicule rapidement avec une estimation en ligne gratuite et sans engagement.</p>
+                    </article>
+                    <article class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center p-3">
+                            <img src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PGT_CRO_M_Showroom-308_Commande.png" alt="Icône commande" class="w-full h-full object-contain" width="48" height="48">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Estimation en 2 minutes</h3>
+                        <p class="text-gray-600">Découvrez combien vaut votre voiture instantanément avec notre outil d'évaluation professionnel.</p>
+                    </article>
+                    <article class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center p-3">
+                            <img src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/icons_ordinateur_peugeot.png" alt="Icône ordinateur" class="w-full h-full object-contain" width="48" height="48">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Meilleur prix garanti</h3>
+                        <p class="text-gray-600">Profitez d'une offre de reprise compétitive basée sur la valeur réelle du marché automobile.</p>
+                    </article>
+                    <article class="text-center">
+                        <div class="w-16 h-16 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center p-3">
+                            <img src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/icons_prix_peugeot.png" alt="Icône prix" class="w-full h-full object-contain" width="48" height="48">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Processus simplifié</h3>
+                        <p class="text-gray-600">De l'estimation à la vente, nous vous accompagnons dans vos démarches administratives.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="bg-gray-50 py-14 px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">95%</div>
+                    <div class="text-sm font-medium text-blue-600 uppercase tracking-wide">CLIENTS SATISFAITS</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">24h</div>
+                    <div class="text-sm font-medium text-blue-600 uppercase tracking-wide">DÉLAI MOYEN D'ESTIMATION</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">15 000</div>
+                    <div class="text-sm font-medium text-blue-600 uppercase tracking-wide">REPRISES PAR AN</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl lg:text-5xl font-bold text-blue-600 mb-2">300</div>
+                    <div class="text-sm font-medium text-blue-600 uppercase tracking-wide">CONCESSIONS PARTENAIRES</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comment ça marche -->
+        <section class="bg-white py-14 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-5">Comment vendre votre voiture en 3 étapes simples</h2>
+                <p class="text-gray-600 text-center mb-10 text-base md:text-lg">De la vente rapide à votre concessionnaire Peugeot à Paris, Lyon, Marseille ou partout en France, découvrez notre processus de rachat simplifié.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">1</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Estimation gratuite en ligne</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Renseignez votre immatriculation et kilométrage pour obtenir une première estimation de la cote de votre voiture. Notre outil analyse instantanément la valeur marchande de votre véhicule. Cette évaluation en ligne est gratuite, sans engagement et disponible 24h/24.</p>
+                    </article>
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">2</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Expertise en concession</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Prenez rendez-vous dans l'un de nos 300 concessionnaires partenaires pour une expertise complète. Nos experts examinent l'état de la carrosserie, du moteur, des équipements et vérifient les documents nécessaires : carte grise, contrôle technique, carnet d'entretien.</p>
+                    </article>
+                    <article class="bg-gray-50 rounded-lg p-6">
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mb-4">3</div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-3">Vente rapide et paiement</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">Nous gérons toutes les démarches administratives : certificat de cession, déclaration de vente. Le paiement est effectué rapidement par virement sécurisé. Bénéficiez d'un bonus de reprise jusqu'à 2&nbsp;000€ pour l'achat d'un véhicule Peugeot.</p>
+                    </article>
+                </div>
+                <div class="text-center">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Obtenez votre estimation</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase -->
+        <section class="bg-white py-14 px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PEUGEOT_E308SW_2508CV_329_FR.jpeg" alt="Peugeot e-308 SW" class="w-full h-auto rounded" width="600" height="400">
+                </div>
+                <div>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6">Vendre sa voiture : obtenez le juste prix pour votre véhicule</h2>
+                    <p class="text-gray-600 text-base md:text-lg mb-8">Avec Peugeot, vendez votre voiture d'occasion en toute confiance. Notre service de reprise vous garantit une estimation transparente, un rachat rapide et des prix compétitifs adaptés à la valeur réelle de votre véhicule sur le marché automobile actuel. Que vous soyez à Paris, Lyon, Marseille ou dans toute la France, nos concessionnaires partenaires vous accueillent pour une vente rapide et sécurisée.</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center mt-0.5"><div class="w-2 h-2 bg-white rounded-full"></div></div>
+                            <p class="text-gray-700">Estimation gratuite et sans engagement en moins de 2 minutes</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center mt-0.5"><div class="w-2 h-2 bg-white rounded-full"></div></div>
+                            <p class="text-gray-700">Rachat immédiat par nos concessionnaires agréés Peugeot en France</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center mt-0.5"><div class="w-2 h-2 bg-white rounded-full"></div></div>
+                            <p class="text-gray-700">Accompagnement complet dans toutes vos démarches administratives</p>
+                        </li>
+                    </ul>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Découvrez le prix de votre auto</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplicité -->
+        <section class="bg-white">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="h-96 lg:min-h-[500px] bg-cover bg-center order-2 lg:order-1" style="background-image: url('https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PEUGEOT_E3008_DUAL_MOTOR_2412PJ_517_FR+(1).jpeg');"></div>
+                <div class="bg-blue-600 text-white p-10 md:p-12 lg:p-16 flex flex-col justify-center order-1 lg:order-2">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 md:mb-8">Reprise automobile<br>rapide et sans tracas</h2>
+                    <p class="text-lg md:text-xl text-blue-100 mb-8 md:mb-10">Vous souhaitez vendre votre voiture rapidement ? Peugeot rachète votre véhicule au meilleur prix. Estimation gratuite en ligne, rendez-vous en concession près de chez vous à Paris, Lyon, Marseille ou partout en France.</p>
+                    <button class="bg-white text-blue-600 hover:bg-blue-50 cta-button">Découvrez votre cote gratuite</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Cards -->
+        <section class="bg-gray-100 py-14 px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <article class="relative h-80 rounded overflow-hidden bg-cover bg-center flex flex-col justify-center px-8" style="background-image: url('https://www.peugeot.fr/content/dam/peugeot/master/b2c/our-range/showroom/308/2025-08-new-308/e-308/E308_MAIN_PAGE_COMFORT_D_1920x1080​.jpg?imwidth=1920');">
+                    <div class="absolute inset-0 bg-black/60"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Comment est calculé<br>le prix de reprise ?</h3>
+                        <p class="text-white/90 mb-8">Découvrez les critères d'évaluation : kilométrage, état, équipements et options de votre véhicule.</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Calculez votre prix</button>
+                    </div>
+                </article>
+                <article class="relative h-80 rounded overflow-hidden bg-cover bg-center flex flex-col justify-center px-8" style="background-image: url('https://www.peugeot.fr/content/dam/peugeot/master/b2c/our-range/showroom/308/2025-08-new-308/e-308/E308_MAIN_PAGE_BUY_ONLINE_1_D_1920x1080​.jpg');">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="relative z-10">
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4">Comment Peugeot certifie<br>votre reprise ?</h3>
+                        <p class="text-white/90 mb-8">Notre processus d'expertise garantit une évaluation transparente et conforme aux standards du constructeur.</p>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Voir les critères</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section class="bg-white py-14 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">Nos actualités sur la reprise automobile</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="shadow-lg rounded bg-white overflow-hidden">
+                        <div class="aspect-video bg-cover bg-center" style="background-image: url('https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PEUGEOT_E308_2508CV_517_FR.jpeg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">Comment estimer le prix de reprise de ma voiture ?</h3>
+                            <p class="text-gray-600 mb-6 text-sm md:text-base">Découvrez notre guide complet pour connaître la valeur exacte de votre véhicule. Nos experts Peugeot vous expliquent les critères d'évaluation : kilométrage, année, état général, équipements et options. Obtenez une estimation automobile fiable basée sur l'analyse du marché de l'occasion et notre expertise professionnelle.</p>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Lire le guide</button>
+                        </div>
+                    </article>
+                    <article class="shadow-lg rounded bg-white overflow-hidden">
+                        <div class="aspect-video bg-cover bg-center" style="background-image: url('https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PEUGEOT_E308SW_2508CV_531_FR.jpeg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">Vendre sa voiture : les étapes du rachat simplifié</h3>
+                            <p class="text-gray-600 mb-6 text-sm md:text-base">De l'estimation en ligne à la signature du contrat de vente, suivez notre processus de rachat automobile sécurisé. Peugeot vous accompagne dans toutes les démarches : expertise du véhicule, documents administratifs (carte grise, certificat de cession), paiement immédiat. Vendez votre voiture en toute sérénité.</p>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Découvrir les étapes</button>
+                        </div>
+                    </article>
+                    <article class="shadow-lg rounded bg-white overflow-hidden">
+                        <div class="aspect-video bg-cover bg-center" style="background-image: url('https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PEUGEOT_E308SW_2508CV_527_FR.jpeg');"></div>
+                        <div class="p-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-4">Bonus reprise voiture : jusqu'à 2&nbsp;000€ offerts</h3>
+                            <p class="text-gray-600 mb-6 text-sm md:text-base">Profitez de notre offre exceptionnelle de reprise ! En plus du prix de rachat de votre ancien véhicule, bénéficiez d'une prime reprise pouvant atteindre 2&nbsp;000€ pour l'achat d'une voiture neuve ou d'occasion Peugeot. Optimisez votre budget automobile et financez plus facilement votre nouveau véhicule.</p>
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white cta-button">Profiter de l'offre</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="bg-gray-50 py-14 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">Ce que les clients disent !</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="shadow-lg rounded bg-white p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900">Super reprise !</h3>
+                            <div class="text-3xl md:text-4xl text-gray-300">"</div>
+                        </div>
+                        <p class="text-gray-600 mb-8 text-sm md:text-base">L'équipe de Peugeot a rendu la vente de ma voiture si simple. J'ai obtenu un excellent prix et tout le processus s'est déroulé sans heurts et sans stress.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Leslie Alexander</div>
+                                <div class="text-gray-600 text-sm">Directrice Marketing</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shadow-lg rounded bg-white p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900">Merci Peugeot</h3>
+                            <div class="text-3xl md:text-4xl text-gray-300">"</div>
+                        </div>
+                        <p class="text-gray-600 mb-8 text-sm md:text-base">J'hésitais à échanger ma voiture, mais Peugeot m'a fait une offre équitable et a tout géré de manière professionnelle. Très content du service !</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Floyd Miles</div>
+                                <div class="text-gray-600 text-sm">Designer</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shadow-lg rounded bg-white p-6 md:p-8">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-lg md:text-xl font-bold text-gray-900">Good Job</h3>
+                            <div class="text-3xl md:text-4xl text-gray-300">"</div>
+                        </div>
+                        <p class="text-gray-600 mb-8 text-sm md:text-base">Le programme de reprise de Peugeot a dépassé mes attentes. Ils ont été transparents, efficaces et m'ont offert une meilleure offre que les autres.</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-gray-200 rounded-full"></div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Dianne Russell</div>
+                                <div class="text-gray-600 text-sm">Marketing</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="bg-white py-14 px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">Questions Fréquentes</h2>
+                <div class="space-y-4" id="faq-container"></div>
+            </div>
+        </section>
+
+        <!-- Guides -->
+        <section class="bg-gray-50 py-14 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-14">Guides pratiques pour réussir votre reprise</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <article class="border-2 border-blue-200 bg-white rounded p-6 md:p-8">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-6">Les 10 points essentiels<br>avant de vendre votre voiture</h3>
+                        <p class="text-gray-600 mb-8 text-sm md:text-base">Documents obligatoires, contrôle technique, entretien du véhicule : téléchargez notre checklist complète pour maximiser le prix de reprise de votre auto.</p>
+                        <a href="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PDF_indispensables_reprise.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white cta-button text-center" download>Téléchargez le guide</a>
+                    </article>
+                    <article class="bg-gray-900 rounded p-6 md:p-8">
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-6">Évitez les pièges lors de<br>la vente de votre véhicule</h3>
+                        <p class="text-gray-300 mb-8 text-sm md:text-base">Arnaques courantes, erreurs de valorisation, documents manquants : découvrez comment sécuriser votre transaction et obtenir le meilleur prix pour votre reprise automobile.</p>
+                        <a href="https://usine-a-sites.s3.eu-west-1.amazonaws.com/site-peugeot-test/PDF_10_erreurs_vente.pdf" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white cta-button text-center" download>Téléchargez le guide</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="max-w-6xl mx-auto px-4 py-16">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="w-24 h-24 mb-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Peugeot_2021_Logo.svg/699px-Peugeot_2021_Logo.svg.png" alt="Logo Peugeot" class="w-full h-full object-contain" width="96" height="96">
+                    </div>
+                    <p class="text-gray-400 mb-6 text-sm md:text-base">Découvrez la valeur de votre véhicule avec notre service d'estimation gratuit et professionnel.</p>
+                    <nav class="flex space-x-4">
+                        <a href="https://twitter.com/Peugeot_FR" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Twitter">
+                            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/Peugeot.France" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Facebook">
+                            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/peugeot_france" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="Instagram">
+                            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/user/Peugeot" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="YouTube">
+                            <svg class="w-5 h-5 fill-current text-white" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </nav>
+                </div>
+                <nav>
+                    <h3 class="text-base md:text-lg font-semibold mb-6">Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Estimation véhicule</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Reprise auto</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Vente véhicule</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Financement</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Assurance</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <h3 class="text-base md:text-lg font-semibold mb-6">Support</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Centre d'aide</a></li>
+                        <li><a href="mailto:contact@peugeot-estimation.fr" class="text-gray-400 hover:text-white text-sm md:text-base">Contact</a></li>
+                        <li><a href="#faq-container" class="text-gray-400 hover:text-white text-sm md:text-base">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Guide d'utilisation</a></li>
+                        <li><a href="tel:+33123456789" class="text-gray-400 hover:text-white text-sm md:text-base">Assistance 24/7</a></li>
+                    </ul>
+                </nav>
+                <address class="not-italic">
+                    <h3 class="text-base md:text-lg font-semibold mb-6">Contact</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-400 text-sm">Téléphone</p>
+                            <a href="tel:+33123456789" class="text-white font-medium text-sm md:text-base hover:text-blue-400">+33 1 23 45 67 89</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Email</p>
+                            <a href="mailto:contact@peugeot-estimation.fr" class="text-white font-medium text-sm md:text-base hover:text-blue-400">contact@peugeot-estimation.fr</a>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 text-sm">Adresse</p>
+                            <p class="text-white font-medium text-sm md:text-base">75 Avenue de la Grande Armée<br>75016 Paris, France</p>
+                        </div>
+                    </div>
+                </address>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex justify-center items-center">
+                <nav class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Déclaration d'accessibilité</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Politique de confidentialité</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Conditions générales de vente</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Informations légales</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Préférences Cookies</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Accessibilité</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const faqData = [
+            {question: "Comment fonctionne la reprise de ma voiture actuelle ?", answer: "La reprise de votre véhicule actuel est simple : nous évaluons votre voiture selon son état, son kilométrage et sa valeur marchande. Cette évaluation peut être déduite du prix d'achat de votre nouveau véhicule Peugeot, facilitant ainsi votre transition vers un modèle plus récent."},
+            {question: "Quels sont les critères d'éligibilité pour la reprise ?", answer: "Votre véhicule doit être en état de marche, posséder tous les documents nécessaires (carte grise, contrôle technique à jour), et correspondre aux critères de notre grille d'évaluation. L'âge, le kilométrage et l'état général sont les principaux facteurs pris en compte."},
+            {question: "Comment puis-je obtenir une estimation de la valeur de reprise ?", answer: "Vous pouvez obtenir une estimation en ligne grâce à notre outil d'évaluation, ou directement en concession avec l'un de nos experts. L'estimation est basée sur le modèle, l'année, le kilométrage et l'état général de votre véhicule."},
+            {question: "La reprise de mon ancien véhicule est-elle obligatoire ?", answer: "Non, la reprise n'est pas obligatoire. C'est un service que nous proposons pour faciliter l'achat de votre nouveau véhicule Peugeot. Vous pouvez choisir de vendre votre véhicule ailleurs ou de le conserver."},
+            {question: "Comment se déroule le processus de reprise en concession ?", answer: "Le processus comprend une expertise complète de votre véhicule par nos techniciens, une proposition de reprise basée sur l'état réel du véhicule, et si vous acceptez, la finalisation des documents administratifs. Le montant de la reprise est directement déduit du prix de votre nouveau véhicule."},
+            {question: "Y a-t-il des frais cachés lors d'une reprise ?", answer: "Non, notre service de reprise est transparent. Le montant proposé est celui que vous recevrez, sans frais cachés. Tous les coûts éventuels vous seront clairement expliqués avant la finalisation de la transaction."},
+            {question: "Quelles sont les alternatives si ma voiture n'est pas éligible à la reprise ?", answer: "Si votre véhicule n'est pas éligible à notre service de reprise, nous pouvons vous orienter vers des partenaires spécialisés dans le rachat de véhicules, ou vous conseiller sur les meilleures options pour la vente de votre voiture en privé."}
+        ];
+
+        let openFaq = 2;
+
+        function renderFAQ() {
+            const container = document.getElementById('faq-container');
+            container.innerHTML = '';
+            faqData.forEach((faq, index) => {
+                const isOpen = openFaq === index;
+                const faqItem = document.createElement('div');
+                faqItem.className = 'border border-gray-200 rounded';
+                faqItem.innerHTML = `
+                    <button class="w-full px-4 md:px-6 py-4 text-left flex items-center justify-between font-semibold ${isOpen ? 'bg-blue-600 text-white rounded-t' : 'text-gray-900 hover:bg-gray-50'}" onclick="toggleFaq(${index})">
+                        <span class="text-sm md:text-base lg:text-lg">${faq.question}</span>
+                        <svg class="w-5 h-5 transform ${isOpen ? 'rotate-180' : ''}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    ${isOpen ? `<div class="px-4 md:px-6 py-4 bg-blue-600 text-white rounded-b"><p class="text-sm md:text-base">${faq.answer}</p></div>` : ''}
+                `;
+                container.appendChild(faqItem);
+            });
+        }
+
+        function toggleFaq(index) {
+            openFaq = openFaq === index ? null : index;
+            renderFAQ();
+        }
+
+        renderFAQ();
+
+        // Activer le select modèle et le bouton quand une marque est sélectionnée
+        const brandSelect = document.getElementById('brand');
+        const modelSelect = document.getElementById('model');
+        const estimateBtn = document.getElementById('estimate-btn');
+
+        brandSelect.addEventListener('change', function() {
+            if (this.value) {
+                modelSelect.disabled = false;
+            } else {
+                modelSelect.disabled = true;
+                modelSelect.value = '';
+                estimateBtn.disabled = true;
+            }
+        });
+
+        modelSelect.addEventListener('change', function() {
+            if (this.value) {
+                estimateBtn.disabled = false;
+            } else {
+                estimateBtn.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
