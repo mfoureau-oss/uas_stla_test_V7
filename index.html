@@ -46,6 +46,13 @@
         @media (max-width: 768px) {.cta-button {display: block; width: 100%; font-size: 0.95rem; white-space: nowrap;}}
         @media (min-width: 769px) {.cta-button {font-size: 0.95rem; white-space: nowrap;}}
         
+        /* Dézoom pour mobile uniquement */
+        @media (max-width: 1023px) {
+            html {
+                font-size: 13px;
+            }
+        }
+        
         /* Dézoom pour écrans moyens (laptops 13-14 pouces uniquement) */
         @media (min-width: 1024px) and (max-width: 1440px) {
             html {
