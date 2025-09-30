@@ -51,6 +51,22 @@
             html {
                 font-size: 13px;
             }
+            /* Augmenter spécifiquement la section des 3 étapes, la section features et les articles news */
+            .bg-gray-50.rounded-lg, 
+            .bg-white.py-14:first-of-type article,
+            .shadow-lg.rounded.bg-white {
+                font-size: 1.08rem;
+            }
+            .bg-gray-50.rounded-lg h3,
+            .bg-white.py-14:first-of-type article h3,
+            .shadow-lg.rounded.bg-white h3 {
+                font-size: 1.1em;
+            }
+            .bg-gray-50.rounded-lg p,
+            .bg-white.py-14:first-of-type article p,
+            .shadow-lg.rounded.bg-white p {
+                font-size: 1.02em;
+            }
         }
         
         /* Dézoom pour écrans moyens (laptops 13-14 pouces uniquement) */
@@ -97,9 +113,15 @@
             font-size: 0.875rem;
             font-weight: 500;
         }
+        @media (max-width: 768px) {
+            .reassurance-text {
+                font-size: 0.95rem;
+            }
+        }
         .reassurance-icon {
             font-size: 1.125rem;
             filter: grayscale(0.3);
+            flex-shrink: 0;
         }
     </style>
 </head>
@@ -118,8 +140,8 @@
                     <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Peugeot_2021_Logo.svg/699px-Peugeot_2021_Logo.svg.png" alt="Logo Peugeot" class="w-full h-full object-contain" width="96" height="96">
                 </div>
             </div>
-            <h1 class="text-3xl md:text-5xl text-white mb-6 font-extrabold">LA REPRISE PAR PEUGEOT : estimez gratuitement votre véhicule en 2 minutes.</h1>
-            <p class="text-white/90 mb-8 font-light text-2xl">Obtenez le meilleur prix pour votre voiture ! Rachat immédiat et paiement sécurisé.</p>
+            <h1 class="text-3xl md:text-5xl text-white mb-6 font-extrabold">LA REPRISE PAR PEUGEOT : estimez gratuitement votre véhicule en 2&nbsp;minutes.</h1>
+            <p class="text-white/90 mb-8 font-light text-2xl">Obtenez le meilleur prix pour votre voiture&nbsp;!</p>
             <div class="mb-12 flex justify-center">
                 <p class="text-white text-lg font-medium bg-black/70 backdrop-blur-sm px-6 py-2 border border-white/20 rounded-sm">✨ Jusqu'à 2 000€ de bonus de reprise</p>
             </div>
